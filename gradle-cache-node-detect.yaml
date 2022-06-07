@@ -6,7 +6,6 @@ info:
   severity: info
   reference:
     - https://gradle.com
-  tags: panel,gradle,cache
 
 requests:
   - method: GET
@@ -20,7 +19,6 @@ requests:
 
     extractors:
       - type: regex
-        part: body
         group: 1
         regex:
           - "<span>Gradle Enterprise Build Cache Node (.*)</span>"
